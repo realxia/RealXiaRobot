@@ -2,53 +2,52 @@ import os
 
 
 class Config(object):
-    API_ID = int(os.environ.get("API_ID", 12345))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "LinkSearchBot")
-    USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "")
-    CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
-    BOT_USERNAME = os.environ.get("BOT_USERNAME")
-    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
-    DATABASE_URL = os.environ.get("DATABASE_URL")
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
+    API_ID = int(os.environ.get("API_ID", 2349334))
+    API_HASH = os.environ.get("API_HASH", "7221c0b860acfdc7e551e583835c1907")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5923042875:AAGELZsCGKGvNOkEif0Jwx25UhHgy1KttGU")
+    BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "realxiabot")
+    USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "BQByupoNPTZnDeqOGQkiKXI7rwH3FuUXMPCdAPXI23Oum2GYILRVP9Q6whvpfmtFsVwwrwG_X754MNbBzjOdods4IqMcZNQ9WpoSV2Keo1rpPF_KnGzS6QSpJoayBZWHZ85HxfA703GABulNxMvgXLyanwcUA_1Vkd7HRtKoNLZd8LDif_I--3d295eu-BSmRS2zMmgfDLuzI8JxLoN6oi5PNx6dNeLFZSdcmgHA6q24iZ65HfUcMqA-ya1zXUfZRoAO9kIx_GK0vS98k_Fz1s1FYkXHlJ9OuzIkpEmtdtJfyC3oX3wjcocvlWmq197o4sfiqLd7NCF-4L6cWxgQhms7AAAAAWLNwoMA")
+    CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -1001737639107))
+    BOT_USERNAME = os.environ.get("realxiabot")
+    BOT_OWNER = int(os.environ.get("5952619139"))
+    DATABASE_URL = os.environ.get("mongodb+srv://realxiabot:realxiabot@cluster0.piftf0x.mongodb.net/?retryWrites=true&w=majority")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", -1001432808072)
     ABOUT_BOT_TEXT = """<b>This is Link Search Bot.
     
     
     
-🤖 My Name: <a href='https://youtube.com/@GreyMattersBot'>Link Search Bot</a>
+🤖 My Name: <a href='https://t.me/realxiabot'>𝙓𝙞𝙖 𝙕𝙞𝙩𝙤𝙣𝙜 💗</a>
 
 📝 Language : <a href='https://www.python.org'> Python V3</a>
 
 📚 Library: <a href='https://docs.pyrogram.org'> Pyrogram</a>
 
-📡 Server: <a href='koyeb.com'>Koyeb</a>
+📡 Server: <a href='Unknown'>VPS</a>
 
-👨‍💻 Created By: <a href='https://t.me/GreyMatter_Bot'>GreyMatter's Bot</a></b>
+👨‍💻 Created By: <a href='https://t.me/xiabotupdates'>Team Xia Zitong 💗</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Creator : <a href='https://t.me/GreyMatter_Bot'>GreyMatter's Bot</a>
-If You Want Your Own Bot Like This Then You Can Contact Our Creator.</b>
+    ABOUT_HELP_TEXT = """<b>👨‍💻 Creator : <a href='https://t.me/xiabotupdates'>Team Xia Zitong 💗</a></b>
 """
 
     HOME_TEXT = """
 <b>Hey! {}😅,
 
-I'm Link Search Bot.🤖
+I'm Search Bot.🤖
 
 I Can Search 🔍 What You Want❗
 
-<a>Made With ❤ By @GreyMatter_Bots</a></b>
+<a>Made With ❤ By @xiabotupdates</a></b>
 """
 
 
     START_MSG = """
 <b>Hey! {}😅,
 
-I'm Link Search Bot.🤖
+I'm Search Bot.🤖
 
 I Can Search 🔍 What You Want❗
 
-<a>Made With ❤ By @GreyMatter_Bots</a></b>
+<a>Made With ❤ By @xiabotupdates</a></b>
 """
 
