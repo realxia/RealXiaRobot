@@ -23,12 +23,11 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
+	await event.reply_photo("https://raw.githubusercontent.com/realxia/000/main/welcome.gif",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-					[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')],
-					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")],
-					[InlineKeyboardButton("Donation", callback_data="Help_msg"),
+					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/xiabotupdates")],
+					[InlineKeyboardButton("Request Group", url="https://t.me/xiarequestarea"),
                                         InlineKeyboardButton("About", callback_data="About_msg")]
 				]))
 
@@ -37,8 +36,7 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-		[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
-	 ],[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots"), 
+	 ],[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/xiabotupdates"), 
              InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝", callback_data="About_msg")]
         ])
     )
@@ -75,11 +73,9 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
+					
 					[
-						InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
-					],
-					[
-						InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+						InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/xiabotupdates")
 					],
 					[
 						InlineKeyboardButton("Home", callback_data="gohome")
@@ -95,10 +91,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-					InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
-					],
-					[
-					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/xiabotupdates")
 					], 
                                         [
 					InlineKeyboardButton("Home", callback_data="gohome"),
@@ -114,11 +107,8 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-                                        [
-					InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
-					],
 					[
-					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/xiabotupdates")
 					],
 					[
 					InlineKeyboardButton("Donation", callback_data="Help_msg"),
